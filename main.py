@@ -6,7 +6,7 @@ from d3blocks import D3Blocks
 
 # Parse time in minutes from column BEGIN abd convert to HH:MM format
 def convert_time(minute):
-    return strftime("%H:%M:%S", gmtime(int(minute) * 60))
+    return strftime("%d-%m-%Y %H:%M:%S", gmtime(int(minute) * 60))
 
 # Parse activity codes from column Q401
 def get_activity(code):
